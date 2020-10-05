@@ -15,19 +15,24 @@ function apagar() {
 
 // Números:
 function calc(x = 0) {
-    // Se o valor que está em fundo não é um número 
-    // if (isNaN(fundo.value) || valor != Number) {
-    //     return false;
-    // } else {
-    //     fundo.value += x;
-    // }
     fundo.value += x;
+
+}
+
+// Operadores:
+function calcOpera(y = 0) {
+    if (fundo.value.endsWith(y)) {
+        return false;
+    } else {
+        fundo.value += y;
+    }
+
 }
 
 // Resultado:
 function resultado() {
-    let resultado = 0
-    resultado = fundo.value
+    let resultado = 0;
+    resultado = fundo.value;
     fundo.value = "";
     fundo.value = eval(resultado);
 }
