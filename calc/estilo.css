@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/*
+Especifica fontes externas: 
+*/
+@font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+}
+
+/* ALL */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bitstream Vera Serif Bold";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    background-color: rgb(89, 89, 182);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Calculadora */
+div#calc {
+    width: 500px;
+    display: grid;
+    /* Quantas colunas vai ter */
+    grid-template-columns: repeat(4, 1fr);
+    /* Distanciamento entre colunas e linhas */
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    /* Altura mínima e máxima para as linhas */
+    grid-auto-rows: minmax(50px, auto);
+}
+
+div#calc input#fundo {
+    /* Texto, ocupe da primeira linha até a 4 (ignore a última) */
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding-left: 1.2rem;
+}
+
+div#calc button,
+input#fundo {
+    font-size: 1.6rem;
+}
+
+div#calc button:nth-child(18) {
+    /*o grid-row-start e end, que faz a mesma que grid-column-start e end coisa só que para linhas */
+    grid-row-start: 5;
+    grid-column-start: 3;
+}
+
+div#calc button:nth-child(13) {
+    grid-column: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+div#calc button:nth-child(17) {
+    grid-column-start: 4;
+}
+
+div#calc button:nth-child(16) {
+    grid-column: 3;
+}
