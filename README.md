@@ -1,2 +1,5 @@
 # Calculadora
- Fazendo uma calculdora com Javascript
+
+Fazendo uma calculadora com Javascript
+
+Feita por Arthur
