@@ -1,18 +1,10 @@
 @charset "UTF-8";
 
-/*
-Especifica fontes externas: 
-*/
-@font-face {
-    font-family: "Bitstream Vera Serif Bold";
-    src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
-}
-
 /* ALL */
 * {
     margin: 0;
     padding: 0;
-    font-family: "Bitstream Vera Serif Bold";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-weight: bold;
 }
