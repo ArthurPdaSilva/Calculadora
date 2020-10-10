@@ -32,8 +32,7 @@ function calcOpera(y = 0) {
 
 // Resultado:
 function resultado() {
-  let resultado = 0;
-  resultado = fundo.value;
+  let resultado = fundo.value;
   fundo.value = "";
   // Faz cálculos com strings;
   fundo.value = eval(resultado);
